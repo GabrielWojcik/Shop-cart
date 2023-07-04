@@ -9,4 +9,12 @@ button {
     color: #FFF;
     font-weight: bold;
     border: none;
+
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:hover button {
+    background: #c47bf5;
 }

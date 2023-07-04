@@ -60,3 +60,13 @@ button {
     font-weight: bold;
     border: none;
 }
+
+@media screen and (min-width: 1000px) {
+    .container-pagamento {
+        width: 45vh;
+        height: 315px;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+    }   
+
+}

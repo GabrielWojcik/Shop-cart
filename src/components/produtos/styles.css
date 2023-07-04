@@ -28,6 +28,7 @@
     left: 9.5px;
     gap: 15px;
     font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-itens {
@@ -42,4 +43,15 @@
 
 .valor {
     width: 80px;
+}
+
+@media screen and (min-width: 1000px) {
+    .container-produtos {
+        justify-content: center;
+    }
+    .container-item {
+        height: auto;
+    }
+
+    
 }
