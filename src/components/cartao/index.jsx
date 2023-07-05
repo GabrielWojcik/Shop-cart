@@ -3,7 +3,7 @@ import Pagamento from "../pagamento/index"
 
 export default function Cartao() {
     return(
-        <>
+        <div className="main">
         <div className="container-main">
         <div className="container-dados">
             <div className="titulo-container">
@@ -30,8 +30,8 @@ export default function Cartao() {
             
            </div>
         </div>
-    </div>
+        </div>
         <Pagamento />
-    </>
+    </div>
     )
 }

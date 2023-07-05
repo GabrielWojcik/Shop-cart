@@ -38,3 +38,11 @@
     line-height: 20px;
 
 }
+
+@media screen and (min-width: 1000px) {
+    .container-main-confirmacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
