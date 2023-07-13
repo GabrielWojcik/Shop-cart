@@ -1,3 +1,17 @@
+.container-slider-principal {
+  width: 100%;
+  height: 100%;
+
+ 
+}
+
+#img-banner-principal {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
 
 [class^="number-slide"],
 [class*=" number-slide"] {
@@ -69,3 +83,4 @@
     rgba(174, 63, 255, 1) 100%
   );
 }
+

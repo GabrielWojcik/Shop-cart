@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MenuMobileContainer = styled.div`
     top: 0;
-
+    z-index: 1000;
     
     position: absolute;
 

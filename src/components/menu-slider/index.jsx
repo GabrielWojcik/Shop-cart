@@ -2,22 +2,23 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import "./styles.css"
 import Desconto from "../../assets/icons/desconto.svg"
-import Cart from "../../assets/icons/cart.svg"
 import PrimeiraCompra from "../../assets/icons/plus.svg"
 import Favorito from "../../assets/icons/favorito.svg"
+import Home from "../../assets/icons/casa.png"
+import Phone from "../../assets/icons/phone.png"
 
 export default function MenuSlider() {
     const icons = [
         {
             "id": 1,
             "text" : "Serviços em Loja",
-            "icon" : Cart
+            "icon" : Home
         },
 
         {
             "id": 2,
             "text" : "Primeira Compra",
-            "icon" : 'Sacola'
+            "icon" : PrimeiraCompra
         },
         {
             "id": 3,
@@ -27,7 +28,7 @@ export default function MenuSlider() {
         {
             "id": 4,
             "text" : "WhatsApp",
-            "icon" : 'Sacola'
+            "icon" : Phone
         },
         {
             "id": 5,
@@ -56,15 +57,13 @@ export default function MenuSlider() {
         {
             icons.map(item => {
                 return(
-                    <div className="keen-slider__slide number-slide1">
-                        <div>
-                            <img src={item.icon} />
-                            {item.text}
+                        <div key={item.id} className="keen-slider__slide number-slide1">
+                            <div className="container-slider">
+                                <img src={item.icon} />
+                                {item.text}
+                            </div>
                         </div>
-                    </div>
-
                 )
-
             })
         }
     </div>       
