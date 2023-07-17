@@ -5,6 +5,7 @@ import Cartao from "./components/cartao";
 import Confirmacao from "./components/confirmacao";
 import Slider from "./components/slider";
 import Home from "./components/home";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/pagamento" element={<Cartao />} />
             <Route path="/confirmacao" element={<Confirmacao />} />
           </Routes>
+        <Footer/>
     </>
   );
 }
