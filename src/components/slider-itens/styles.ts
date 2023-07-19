@@ -7,16 +7,16 @@ export const ContainerSliderItens = styled.div`
 `
 
 export const ContainerItens = styled.div`
-    border-color: red;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     .keen-slider__slide number-slide1 {
-        background: rgb(64, 175, 255);
+        height: 500px;
+        /* background: rgb(64, 175, 255);
         background: linear-gradient(
             128deg,
             rgba(64, 175, 255, 1) 0%,
             rgba(63, 97, 255, 1) 100%
-        );
+        ); */
     }
    
 `
@@ -43,6 +43,7 @@ export const Box = styled.div`
 
     button {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 

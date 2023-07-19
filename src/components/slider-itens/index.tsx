@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ContainerItens, ContainerSliderItens, Box } from "./styles";
-
+import { MdFavoriteBorder } from 'react-icons/md'
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -35,9 +35,11 @@ export default function SliderItens() {
                             src={item.product.imageObjects[0].thumbnail} 
                             alt=""  
                             />
+                                
                             <p>{item.product.name}</p>
+                            
                             <button> 
-                                R$ {item.product.priceSpecification.price}
+                                R$ {item.product.priceSpecification.price} <MdFavoriteBorder size={15} />
                             </button>
                             </Box>
                         

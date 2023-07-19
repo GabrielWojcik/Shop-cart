@@ -6,4 +6,11 @@
 #img-banner-secundario {
     width: 100%;
     object-fit: contain;
-  }
+}
+
+@media screen and (min-width: 1000px) {
+    #img-banner-secundario {
+        width: 100%;
+        /* object-fit: contain; */
+    }
+}
