@@ -1,11 +1,12 @@
+import "./styles.css"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import "./styles.css"
 import Desconto from "../../assets/icons/desconto.svg"
 import PrimeiraCompra from "../../assets/icons/plus.svg"
 import Favorito from "../../assets/icons/favorito.svg"
 import Home from "../../assets/icons/casa.png"
 import Phone from "../../assets/icons/phone.png"
+import { NavLink } from 'react-router-dom';
 
 export default function MenuSlider() {
     const icons = [
@@ -58,10 +59,12 @@ export default function MenuSlider() {
             icons.map(item => {
                 return(
                         <div key={item.id} className="keen-slider__slide number-slide1">
-                            <div className="container-slider">
-                                <img src={item.icon} />
-                                {item.text}
-                            </div>
+                            <NavLink to="/cupom-de-desconto/primeira-compra" >
+                                <div className="container-slider">
+                                    <img src={item.icon} />
+                                    {item.text}
+                                </div>
+                            </NavLink>
                         </div>
                 )
             })

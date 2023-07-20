@@ -15,7 +15,7 @@ export default function NavBar() {
         <nav>
         <div className="container">
             <div className="container-navbar">
-                <p className="logo">Beauty</p>
+                <NavLink to="/"><p className="logo">Beauty</p></NavLink>
                 <NavLink activeStyle={{borderBottom: 'solid 3px #fff', paddingBottom: '1em'}} exact  to="/sacola" ><p id="sacola" >Sacola</p></NavLink>
                 <NavLink activeClassName="selected" to="/pagamento" ><p id="pagamento" >Pagamento</p></NavLink>
                 <NavLink to="/confirmacao" activeClassName="selected"><p id="confirmacao" >Confirmação</p></NavLink>

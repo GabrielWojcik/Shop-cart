@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js"
-, "src/assets/Icons/Icon.tsx", "src/components/Footer-fixed/FooterFixed.jsx", "src/components/New-Modal/Modal-Bot.jsx", "src/components/New-Modal/Modal-Bot.jsx", "src/components/Footer-Fixed-Calculadora/FooterFixedCalculadora.tsx", "src/components/testeSimu/teste.jsx", "src/components/Carousel-Constructions/Carousel.jsx", "src/components/Carousel-Status-Construction/CarouselStatusConstruction.tsx", "src/tests/display.test.jsx", "src/tests/menu.test.jsx"  ],
+, "src/assets/Icons/Icon.tsx", "src/components/Footer-fixed/FooterFixed.jsx", "src/components/New-Modal/Modal-Bot.jsx", "src/components/New-Modal/Modal-Bot.jsx", "src/components/Footer-Fixed-Calculadora/FooterFixedCalculadora.tsx", "src/components/testeSimu/teste.jsx", "src/components/Carousel-Constructions/Carousel.jsx", "src/components/Carousel-Status-Construction/CarouselStatusConstruction.tsx", "src/tests/display.test.jsx", "src/tests/menu.test.jsx", "src/components/primeira-compra/index.jsx"  ],
   "exclude": [
     "node_modules"
   ]

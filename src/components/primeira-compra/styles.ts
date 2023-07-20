@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 
 export const ContainerPrimeiraCompra = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
 `
 
@@ -58,4 +60,25 @@ export const Code = styled.div`
         background-color: #fff;
         cursor: pointer;
     }
+`
+export const ContainerDescribe = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe1ec;
+
+    strong {
+        text-align: center;
+        font-size: 20px;
+        color: #FF005C;
+        width: 80%;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
 `
