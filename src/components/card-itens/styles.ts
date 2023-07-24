@@ -7,13 +7,14 @@ export const CardItensContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: 1px solid;
+    border: 1px solid #ebebeb;;
     margin: 5px;
 
 `
 export const ContainerProduct = styled.div`
     display: flex;
     width: 100%;
+    padding: 10px;
 `
 
 export const Star = styled.div`
@@ -27,7 +28,38 @@ export const Product = styled.div`
     width: 100%;
 
     img {
-        width: 70px;
-        height: 70px;
+        /* width: 170px; */
+        /* height: 170px;: */
+        object-fit: cover;
     }
+`
+export const ProductDesc = styled.div`
+    padding: 10px;
+
+    #title {
+        font-size: 11px;
+    }
+    .descricao {
+        font-size: 13px;
+    }
+
+    #price {
+        font-size: 15px;
+    }
+
+    #price-value {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        height: 45px;
+        background-color: #00a470;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), inset 0 -2px 0 0 rgba(0,0,0,.2);
+    }
+
 `

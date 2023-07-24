@@ -28,7 +28,10 @@ export default function PrimeiraCompra() {
                     </p>
             </ContainerDescribe>
             <img src={Cell} />
-            {/* <CardItens /> */}
+            <div style={{display: 'flex'}}>
+                <CardItens />
+                <CardItens />
+            </div>
         </ContainerPrimeiraCompra>
     )
 }
