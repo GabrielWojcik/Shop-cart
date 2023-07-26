@@ -1,5 +1,4 @@
 import img1 from "../../assets/image-3.png"
-import coracao from "../../assets/favorite.png"
 import { CardItensContainer, ContainerProduct, Star, Product, ProductDesc } from "./styles"
 import { MdFavoriteBorder } from 'react-icons/md'
 

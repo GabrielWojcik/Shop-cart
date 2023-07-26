@@ -28,10 +28,10 @@ export const Product = styled.div`
     width: 100%;
 
     img {
-        /* width: 170px; */
-        /* height: 170px;: */
         object-fit: cover;
     }
+
+
 `
 export const ProductDesc = styled.div`
     padding: 10px;

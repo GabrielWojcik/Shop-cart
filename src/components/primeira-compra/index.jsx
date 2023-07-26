@@ -1,4 +1,4 @@
-import { Code, ContainerDescribe, ContainerPrimeiraCompra, CupomContainer, Describe } from "./styles";
+import { Code, ContainerDescribe, ContainerPrimeiraCompra, CupomContainer, Describe, TextDescribe } from "./styles";
 import Cell from "../../assets/app.svg";
 import CardItens from "../card-itens/index"
 export default function PrimeiraCompra() {
@@ -17,6 +17,7 @@ export default function PrimeiraCompra() {
                 </Code>
             </CupomContainer>
             <ContainerDescribe>
+                <TextDescribe>
                     <strong>
                         Cupom Beauty: Desconto na Primeira Compra
                     </strong>
@@ -26,8 +27,9 @@ export default function PrimeiraCompra() {
                     Escolha entre os produtos selecionados nesta página e 
                     utilize o cupom no carrinho.Receba sua compra em casa e com segurança.
                     </p>
-            </ContainerDescribe>
+                </TextDescribe>
             <img src={Cell} />
+            </ContainerDescribe>
             <div style={{display: 'flex'}}>
                 <CardItens />
                 <CardItens />

@@ -5,10 +5,15 @@ export const ContainerPrimeiraCompra = styled.div`
     flex-direction: column;
     gap: 15px;
 
+    
+   
+
 `
 
 export const CupomContainer = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
 
     background-color: #ffe1ec;
@@ -79,6 +84,33 @@ export const ContainerDescribe = styled.div`
         padding: 10px;
         font-size: 14px;
         text-align: justify;
+    }
+    
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        img {
+            width: 350px;
+            height: 350px;
+        }
+}
+
+`
+
+export const TextDescribe = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1000px) {
+        p {
+            width: 50%;
+        }
     }
 
 `
