@@ -1,8 +1,8 @@
 import React from "react";
 import './styles.css';
 
-export default function Button(props) {
+export default function Button( props, cardNumber) {
     return(
-            <button>{props.children}</button>
+            <button disabled={!cardNumber}>{props.children}</button>
     )
 }

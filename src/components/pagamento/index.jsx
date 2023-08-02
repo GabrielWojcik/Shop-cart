@@ -1,7 +1,7 @@
 import "./styles.css";
 import Button from "../button/index";
 
-export default function  Pagameto() {
+export default function  Pagameto( {cardNumber} ) {
 
     return(
         <div className="container-pagamento">
@@ -25,7 +25,7 @@ export default function  Pagameto() {
                     <p>Subtotal:  </p>
                     <p>R$ 600,10</p>
                 </div>
-                <Button>Seguir para o pagamento</Button>
+                <Button cardNumber={cardNumber} >Seguir para o pagamento</Button>
             </div>
         </div>
     )

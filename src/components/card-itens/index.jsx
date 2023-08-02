@@ -1,9 +1,13 @@
 import img1 from "../../assets/image-3.png"
 import { CardItensContainer, ContainerProduct, Star, Product, ProductDesc } from "./styles"
 import { MdFavoriteBorder } from 'react-icons/md'
+import { NavLink, useParams } from 'react-router-dom';
 
 export default function CardItens(){
+    const { id } = useParams()
+
     return(
+        <NavLink to='/produto/3'>
         <CardItensContainer>
             <ContainerProduct>
                 <Star>
@@ -24,5 +28,6 @@ export default function CardItens(){
                     <button>COMPRE AGORA</button>
                 </ProductDesc>
         </CardItensContainer>
+        </NavLink>
     )
 }
