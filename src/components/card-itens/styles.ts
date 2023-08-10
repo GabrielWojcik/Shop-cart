@@ -6,9 +6,13 @@ export const CardItensContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 90%;
     border: 1px solid #ebebeb;;
     margin: 5px;
+
+    @media screen and (min-width: 1000px) {
+        width: 50%;
+    }
 
 `
 export const ContainerProduct = styled.div`

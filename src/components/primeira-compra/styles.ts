@@ -114,3 +114,17 @@ export const TextDescribe = styled.div`
     }
 
 `
+
+export const ContainerCards = styled.div`
+    display: flex;
+
+    @media screen and (min-width: 1000px) {
+        a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }  
+    }
+    
+  
+`

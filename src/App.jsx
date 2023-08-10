@@ -8,6 +8,7 @@ import Home from "./components/home";
 import Footer from "./components/footer";
 import PrimeiraCompra from "./components/primeira-compra";
 import CardItens from "./components/card-itens";
+import Item from "./components/item/Item";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/confirmacao" element={<Confirmacao />} />
             <Route path="/cupom-de-desconto/primeira-compra" element={<PrimeiraCompra />} />
             <Route path="/product/:id" element={<CardItens />} />
+            <Route path="/product/item" element={<Item />} />
           </Routes>
         <Footer/>
     </>

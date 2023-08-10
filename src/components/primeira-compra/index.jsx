@@ -1,4 +1,4 @@
-import { Code, ContainerDescribe, ContainerPrimeiraCompra, CupomContainer, Describe, TextDescribe } from "./styles";
+import { Code, ContainerDescribe, ContainerPrimeiraCompra, CupomContainer, Describe, TextDescribe, ContainerCards } from "./styles";
 import Cell from "../../assets/app.svg";
 import CardItens from "../card-itens/index"
 export default function PrimeiraCompra() {
@@ -30,10 +30,10 @@ export default function PrimeiraCompra() {
                 </TextDescribe>
             <img src={Cell} />
             </ContainerDescribe>
-            <div style={{display: 'flex'}}>
+            <ContainerCards>
                 <CardItens />
                 <CardItens />
-            </div>
+            </ContainerCards>
         </ContainerPrimeiraCompra>
     )
 }
