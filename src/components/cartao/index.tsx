@@ -4,9 +4,10 @@ import Pagamento from "../pagamento/index"
 
 export default function Cartao() {
     const [name, setName] = useState<string>()
-    const [cardNumber, setCardNumber] = useState<string>()
+    const [cardNumber, setCardNumber] = useState<string>('')
     const [cardDate, setCardDate] = useState<string>()
     const [cardCode, setCardCode] = useState<string>()
+
 
     return(
         <div className="main">
@@ -31,7 +32,7 @@ export default function Cartao() {
                 value={name}
                 onChange={(e) => setName(e.target.value)} 
                 className="input-cartao" 
-                type="number" 
+                type="text" 
                 placeholder="Nome impresso no cartão"
                  />
            </div>
@@ -55,6 +56,7 @@ export default function Cartao() {
                      className="input-cvv" 
                      type="number" 
                      placeholder="xxx"
+                     maxLength={3}
                       />
                 </div>
             

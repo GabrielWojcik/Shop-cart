@@ -2,7 +2,6 @@ import "./styles.css";
 import Button from "../button/index";
 
 export default function  Pagameto( {cardNumber} ) {
-
     return(
         <div className="container-pagamento">
             <div className="pagamento-descricao">
