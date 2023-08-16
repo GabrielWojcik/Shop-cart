@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import PrimeiraCompra from "./components/primeira-compra";
 import CardItens from "./components/card-itens";
 import Item from "./components/item/Item";
+import Login from "./components/login";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
             <Route path="/cupom-de-desconto/primeira-compra" element={<PrimeiraCompra />} />
             <Route path="/product/:id" element={<CardItens />} />
             <Route path="/product/item" element={<Item />} />
+            <Route path="/entrar" element={<Login />} />
+
           </Routes>
         <Footer/>
     </>

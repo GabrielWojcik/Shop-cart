@@ -11,12 +11,6 @@ import useRouterNavBar from "../../hooks/router";
 export default function MenuMain() {
     const [isActiveMenu, setIsActiveMenu] = useState(false)
     
-    const ativaLink = () => {
-        const newRouter = useRouterNavBar()
-        const navegarPara = useNavigate()
-        newRouter('/sacola')
-    }
-
     return(
         <>
         <header>
@@ -24,13 +18,18 @@ export default function MenuMain() {
         <div className="container">
             <div className="container-navbar">
                 <NavLink to="/"><p className="logo">Beauty</p></NavLink>
-                {/* <NavLink 
+                <NavLink 
                 exact  
-                to="/sacola"> */}
-                    <p onClick={ativaLink} id="sacola" className="sac">Sacola</p>
-                {/* </NavLink> */}
+                to="/sacola">
+                    <p id="sacola" className="sac">Sacola</p>
+                </NavLink>
                 <NavLink activeClassName="selected" to="/pagamento" ><p id="pagamento" >Pagamento</p></NavLink>
                 <NavLink to="/confirmacao" activeClassName="selected"><p id="confirmacao" >Confirmação</p></NavLink>
+                <NavLink to="/entrar">
+                <p>
+                    Entre na sua conta
+                </p>
+                </NavLink>
             </div>
         </div>
 
