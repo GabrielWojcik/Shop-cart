@@ -1,17 +1,39 @@
 import { useState } from "react";
 import { Card, ContainerLogin } from "./styles";
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
+import jwt_decode from "jwt-decode";
+import { useNavigate } from "react-router-dom"
 
-interface LoginInterface {
-    userEmail: string,
-    userName: string,
-    password: string
+// interface LoginInterface {
+//     userEmail: string,
+//     userName: string,
+//     password: string
+// }
+
+interface DecodeGoogle {
+    name: string
+    given_name: string
+    email: string
+    picture: string
 }
 
 export default function Login(){
-    const [userEmail, setUserEmail] = useState()
-    const [userName, setUserName] = useState()
-    const [userPassword, setUserPassword] = useState()
-    const [isApproved, setIsApproved] = useState(false)
+
+    const [isApproved, setIsApproved] = useState(false)    
+    const [name, setName] = useState<string>()
+    const [fullName, setFullName] = useState<string>()
+    const [email, setEmail] = useState<string>()
+    const [profilePic, setProfilePic] = useState<string>()
+
+    function authenticantion(credentialResponse) {
+        const decoded: DecodeGoogle = jwt_decode(credentialResponse);
+        setName(decoded.name)
+        setEmail(decoded.email)
+        setFullName(decoded.given_name)
+        setProfilePic(decoded.picture)
+    }
+
     return(
         <ContainerLogin>
             <Card>
@@ -60,20 +82,21 @@ export default function Login(){
                     }
 
                     <p id="option">ou utilize sua conta</p>
-                    <button id="btn-google">
-                        Google
-                    </button>
+                    <GoogleOAuthProvider 
+                        clientId="876735832686-c5ll43jmlruvj4468fq9rbg32duanvmi.apps.googleusercontent.com">
+                        <GoogleLogin
+                        onSuccess={credentialResponse => {
+                            authenticantion(credentialResponse.credential)
+                        }}
+                        onError={() => {
+                            console.log('Login Failed')
+                        }}
+                        />
+                    </GoogleOAuthProvider>
                 </form>
                 </>
                 }
-
-               
             </Card>
-
-            
-
-
-
         </ContainerLogin>
     )
 }

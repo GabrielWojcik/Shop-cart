@@ -12,9 +12,7 @@ import Item from "./components/item/Item";
 import Login from "./components/login";
 
 function App() {
-
-  const { id } = useParams()
-
+// AIzaSyCudGqYICsyK9FvsoHRq1LdIYHk8HxmOOU
   return (
     <>
         <NavBar/>
@@ -27,7 +25,6 @@ function App() {
             <Route path="/product/:id" element={<CardItens />} />
             <Route path="/product/item" element={<Item />} />
             <Route path="/entrar" element={<Login />} />
-
           </Routes>
         <Footer/>
     </>
