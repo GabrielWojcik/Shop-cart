@@ -21,10 +21,10 @@ export default function MenuMain() {
                 <NavLink 
                 exact  
                 to="/sacola">
-                    <p id="sacola" className="sac">Sacola</p>
+                    <p id="sacola" className="sac">Favoritos</p>
                 </NavLink>
-                <NavLink activeClassName="selected" to="/pagamento" ><p id="pagamento" >Pagamento</p></NavLink>
-                <NavLink to="/confirmacao" activeClassName="selected"><p id="confirmacao" >Confirmação</p></NavLink>
+                <NavLink activeClassName="selected" to="/pagamento" ><p id="pagamento" >+ Vendidos</p></NavLink>
+                <NavLink to="/confirmacao" activeClassName="selected"><p id="confirmacao" >Promoções</p></NavLink>
                 <NavLink to="/entrar">
                 <p>
                     Entre na sua conta

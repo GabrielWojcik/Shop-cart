@@ -10,9 +10,9 @@ import PrimeiraCompra from "./components/primeira-compra";
 import CardItens from "./components/card-itens";
 import Item from "./components/item/Item";
 import Login from "./components/login";
+import Profile from "./components/profile";
 
 function App() {
-// AIzaSyCudGqYICsyK9FvsoHRq1LdIYHk8HxmOOU
   return (
     <>
         <NavBar/>
@@ -25,6 +25,7 @@ function App() {
             <Route path="/product/:id" element={<CardItens />} />
             <Route path="/product/item" element={<Item />} />
             <Route path="/entrar" element={<Login />} />
+            <Route path="/perfil" element={<Profile />} />
           </Routes>
         <Footer/>
     </>
