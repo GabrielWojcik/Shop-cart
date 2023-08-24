@@ -7,10 +7,10 @@ import { HomeContainer } from "./styles";
 export default function Home() {
     return(
         <HomeContainer>
-            <Slider />
-            <MenuSlider />
-            <Banner />
-            <SliderItens />
+            {/* <Slider /> */}
+            {/* <MenuSlider />
+            <Banner /> */}
+            {/* <SliderItens /> */}
         </HomeContainer>
     )
 }
